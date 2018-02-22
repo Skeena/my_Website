@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="shortcut icon" type="image/x-icon" href="Resources/images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>George Schena</title>
+    
+    <link rel="stylesheet" href="Resources/CSS/styles.css">
+    <link rel="stylesheet" href="resources/CSS/form.css">
+    
+    <script src="Resources/Javascript/website.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    
+</head>
+
+<div class="navbar" id= "myTopnav">    
+    <a href="#HOME" class="active" >George Schena</a>
+    <a href="#MYEHTOS" onclick="responseFunction()"> My Ethos</a>
+    <a href="#WHOWHATWHERE" onclick="responseFunction()"> Who, What, Where </a>
+    <a href="#MYPORTFOLIOOFWORK" onclick="responseFunction()"> My Portfolio Of Work </a>
+    <a href="#WHERETOFINDME" onclick="responseFunction()"> Where To Find Me </a>
+    <a href="javascript:void(0);" class="icon" onclick="responseFunction()">&#9776;</a> 
+</div>
+
+
+    <script>
+    function responseFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+    </script>
+    
+    <script>
+    $(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+    </script>
+
+
+
+<body>
+    <div id="HOME"class="pimg1">
+        <div class="ptext">
+            <span class="border">
+                WELCOME
+            </span>
+        </div>
+    </div>
+    
+    <section id="MYEHTOS"class="section section-light">
+        <h2>MY ETHOS  </h2>
+        <p>
+        I am a hardworking individual with the passion and drive to develop myself as a technically skilled software developer. I have always had a passion for technology and have been working with both hardware and software from a very early age. I am enthusiastic, driven and ready for any challenge thrown at me. I provide strong analytical skills as well as experience with object orientated programming techniques. In addition I am a compatible team player with excellent communication skills. I am currently studying for my masters in advanced computer science in order to further myself as a talented software developer.
+        </p>
+    </section>
+    
+        <div class="pimg2">
+            <div class="ptext">
+                <span class="border trans">
+                   <div class="picText">
+                    WHO AM I AS A PERSON.
+                   </div>
+                </span>
+            </div>
+        </div>
+
+    <section id="WHOWHATWHERE"class="section section-dark">
+        <h2>WHO, WHAT, WHERE..</h2>
+        <p>
+        I am a 21-year-old junior developer based in London with a strong passion for creating software who is looking to break into the industry. I have recently finished my undergraduate degree in Computer Science (Software Engineering) and I am now studying for my postgraduate degree in Advanced Computer Science. I currently work at a small software company part time to gain some industry experience as well as make some money while studying, while working there I have been helping develop and improve their current website they use to log phone calls and manage there day to day activities. My long term aim is to become a well rounded software engineer and help change the world with the use of technology.
+        </p>
+    </section>
+    
+        <div class="pimg3">
+            <div class="ptext">
+                <span class="border trans">
+                    <div class="picText">
+                    WHAT I CAN DO.
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+        <section id="MYPORTFOLIOOFWORK"class="section section-dark">
+        <h2>MY PORTFOLIO OF WORK</h2>
+        <p>
+            Color Recognition Application: iOS app developed with Objective C that allows the user to take a picture and be informed of what colors are in the image.
+        </p>
+
+        <p>
+            Adding Apples Application: iOS app developed with Swift that allows young children to learn the basics of addition using apples that they can interact with in order to have a visual representation of the sum at hand.
+        </p>
+
+        <p>
+            Bottoms Up Application: iOS app developed with Swift that allows users to play a responsible drinking game in order to get to know other players View my iOS apps here!
+        </p>
+
+        <p>
+            Shopping List Application: A simple web based application that allows users to create a virtual shopping list. (HTML, CSS, JavaScript)
+        </p>
+        
+        <p>
+            SeenOnMe Application: iOS app developed with swift, which uses Firebase to store user information and allows users to post and like outfits that other users can then purchase. (Still in development)
+        </p>
+
+        <p>
+            Java Simulation Application: Developed a Java based simulation game comparing three algorithms against each other in a small team of 3 developers.
+        </p>
+        
+        <p>
+            Job Searching Application: I developed an imporved version of LinkedIn by introducing a much more streamline way of applying for jobs via an iOS application using Swift as the programming langauge. This reduces the complexity of applying for jobs for users of the application (Still in development)
+        </p>
+        
+        
+    </section>
+    
+    <div class="pimg2">
+            <div class="ptext">
+                <span class="border trans">
+                    <div class="picText">
+                    CONTACT DETAILS.
+                    </div>
+                </span>
+            </div>
+        </div>
+
+    <section id="WHERETOFINDME"class="section section-dark">
+        <h2>WHERE TO FIND ME</h2>
+        
+        <P>
+            Email: georgeschena@hotmail.com
+        </P>
+
+        <P>
+            GitHub: https://github.com/Skeena
+        </P>
+
+        <P>
+            Instagram: georgeschena
+        </P>
+
+        <P>
+            Facebook: George Schena
+        </P>
+    </section>
+    
+        <section id="contactForm"class="section section-light">
+        <h2>Contact Me</h2>
+            
+        <div class="container">  
+            
+          <form id="contact" action='send.php' method="POST">
+            <h4>Will reply within 24 hours!</h4>
+              
+            <fieldset>
+              <input placeholder="Your name" type="text" name="name" tabindex="1" required>
+            </fieldset>
+
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
+            </fieldset>
+
+            <fieldset>
+              <textarea placeholder="Type your Message Here...." tabindex="5" name="message" required></textarea>
+            </fieldset>
+
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+                           
+          </form>
+
+
+        </div>
+
+
+
+    </section>
+    
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border">
+                Thanks For VISITING.
+            </span>
+        </div>
+    </div>
+    
+</body>
+</html>
